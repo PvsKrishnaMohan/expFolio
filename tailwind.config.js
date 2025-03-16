@@ -7,6 +7,16 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 }
 
+function addVariablesForColors({ addBase, theme }) {
+  const allColors = theme("colors");
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
