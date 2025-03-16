@@ -3,6 +3,8 @@ import GlobeHero from "./Components/GlobeHero";
 import {SparklesPreview} from "./Components/SparkelesPreview";
 import {SparklesPreview1} from "./Components/SparkelsPreview1";
 import {TextHoverEffectDemo} from "./Components/TextHoverEffectUsuage";
+import {BackgroundBeamsDemo} from "./Components/HeroBeamsDemo";
+import {BackgroundBeamsWithCollisionDemo} from "./Components/BackgroundBreamswithCollisionDemo";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <SparklesPreview/>
       <SparklesPreview1/>
       <TextHoverEffectDemo/>
+      <BackgroundBeamsDemo/>
+      <BackgroundBeamsWithCollisionDemo/>
     </div>
   );
 };
